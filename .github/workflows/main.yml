@@ -14,7 +14,15 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
+      - name: Determine if branch is for a pre-release
+        id: pre-branch
+        run: |
+          if [[ ${{ github.ref_name }} =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+              echo "match=true" >> $GITHUB_OUTPUT
+          fi
       - uses: google-github-actions/release-please-action@v3
         with:
           command: manifest
           default-branch: "${{ github.ref_name }}"
+          versioning: "${{ steps.pre-branch.outputs.match && 'prerelease' || 'default' }}"
+          prerelease: ${{ steps.pre-branch.outputs.match && true || false }}
