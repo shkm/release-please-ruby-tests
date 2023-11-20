@@ -4,7 +4,7 @@
   "prerelease-type": "pre",
   "release-type": "ruby",
   "versioning": "prerelease",
-  "prerelease": true
+  "prerelease": true,
   "packages": {
     ".": {
     }
