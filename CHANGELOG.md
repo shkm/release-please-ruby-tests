@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1-pre1](https://github.com/shkm/release-please-ruby-tests/compare/v0.2.0-pre1...v0.2.1-pre1) (2023-11-20)
+
+
+### Features
+
+* new feat for pre-release 0.2.x ([8ce9fde](https://github.com/shkm/release-please-ruby-tests/commit/8ce9fde5e08442727f840e7337c92a26372e92bf))
+
 ## [0.2.0-pre1](https://github.com/shkm/release-please-ruby-tests/compare/v0.2.0-pre0...v0.2.0-pre1) (2023-11-20)
 
 
